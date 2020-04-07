@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+
+  <title>{{ .Title }}</title>
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/dracula.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</html>
+<body>
+  <header>
+    <div style="display: flex; align-items: baseline;">
+      <h1>{{ .Site.Title }}</h1>
+      <nav style="margin-left: auto;">
+        {{ if .IsPage }}<a href="/">Home</a>{{ end }}
+      </nav>
+    </div>
+    <p class="tagline">Technology and stuff</p>
+  </header>
+
+  {{ block "main" . }}
+  {{ end }}
+
+  <footer>
+    <small>&copy; Nicholas Wylie {{ .Site.LastChange.Format "2006" }}</small>
+  </footer>
+</body>
+</html>

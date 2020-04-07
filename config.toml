@@ -1,0 +1,9 @@
+baseURL = "https://nowylie.com/"
+languageCode = "en-us"
+title = "Nicholas Wylie"
+
+[markup.highlight]
+style = "monokai"
+
+[permalinks]
+posts = "/:year/:month/:slug"

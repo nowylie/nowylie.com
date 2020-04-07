@@ -1,0 +1,65 @@
+body {
+  color: #1A202C;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* On screen */
+@media screen {
+  /* Give the page a bit of padding, a softer text colour, and larger font */
+  body {
+    color: #1A202C;
+    font-size: 20px;
+    padding: 2rem;
+  }
+
+  /* Give header, footer, and main content a max width and center on the page */
+  header,
+  footer,
+  main {
+    max-width: 70ch;
+    margin: 0px auto;
+  }
+
+  /* Make footer text light colour and right align */
+  footer {
+    color: grey;
+    text-align: right;
+  }
+}
+
+header > p.tagline {
+  color: grey;
+  font-family: 'Source Code Pro', monospace;
+  font-style: italic;
+  margin-top: -2.25rem;
+}
+
+/* Center images within articles */
+article img {
+  display: block;
+  margin: 0px auto;
+}
+
+/* Give code a monospace font */
+article code {
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+/* And a border and small radius to inline code */
+article p > code {
+  border: 1px solid #A0AEC0;
+  border-radius: 4px;
+}
+
+/* And a larger radius to code fences */
+article div.highlight > pre {
+  border-radius: 6px;
+}
+
+/* And some padding */
+article p > code { padding: 0rem .25rem; }
+article div.highlight > pre { padding: .75rem 1rem; }
+
+/* And remove vertical margin from code fences */
+article div.highlight > pre { margin: 0px; }
