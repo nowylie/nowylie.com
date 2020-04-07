@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Nicholas Wylie">
+  <meta name="description" content="Nicholas Wylie's personal blog">
 
   <title>{{ .Title }}</title>
 
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/dracula.css">
-  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </html>
 <body>
@@ -17,7 +19,7 @@
         {{ if .IsPage }}<a href="/">Home</a>{{ end }}
       </nav>
     </div>
-    <p class="tagline">Technology and stuff</p>
+    <p class="tagline">Code and things</p>
   </header>
 
   {{ block "main" . }}

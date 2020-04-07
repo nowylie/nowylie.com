@@ -1,5 +1,4 @@
 body {
-  color: #1A202C;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
 }
@@ -8,7 +7,6 @@ body {
 @media screen {
   /* Give the page a bit of padding, a softer text colour, and larger font */
   body {
-    color: #1A202C;
     font-size: 20px;
     padding: 2rem;
   }
@@ -50,16 +48,15 @@ article code {
 article p > code {
   border: 1px solid #A0AEC0;
   border-radius: 4px;
+  padding: 0rem .25rem;
 }
 
 /* And a larger radius to code fences */
 article div.highlight > pre {
   border-radius: 6px;
+  overflow-x: auto;
+  padding: .75rem 1rem;
 }
-
-/* And some padding */
-article p > code { padding: 0rem .25rem; }
-article div.highlight > pre { padding: .75rem 1rem; }
 
 /* And remove vertical margin from code fences */
 article div.highlight > pre { margin: 0px; }
